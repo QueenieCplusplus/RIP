@@ -52,3 +52,5 @@ Routing Information Protocol
                  V       | V
                  Mask    V metrics
                          Distance of Route
+
+(to be continued)
