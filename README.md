@@ -2,6 +2,10 @@
 
 Routing Information Protocol
 
+* cmd:
+
+> show ip route
+
 * config:
 
 > Mask, Prefix Format
@@ -14,10 +18,6 @@ Routing Information Protocol
 
 > Candidate Default Routes & GW of Last Resort
 
-* cmd:
-
-> show ip route
-
 * routing table:
 
 > its Content & Update Process
@@ -29,3 +29,26 @@ Routing Information Protocol
 > LB
 
 > NBMA
+
+------------------------------------------------------------------------
+# Show IP Route
+
+    R0$ show ip route
+    
+    Codes: R - RIP
+           O - OSPF
+           S - Stactic
+           U - Per User Static Route
+           B - BGP
+           i - IS-IS
+           * - Candidate Default
+           D - EIGRP
+           
+      R 192.168.2.0/24 [120/2] via 192.168.3.1 00:00:00. Serial0
+      |          |       | |           |                      |
+      V          |       | |           V                      |
+      source of routing info           Next Hop Router        V
+                 |       | |                                  Output of interface
+                 V       | V
+                 Mask    V metrics
+                         Distance of Route
