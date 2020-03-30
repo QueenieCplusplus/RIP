@@ -86,4 +86,9 @@ And the "Gateway at last resort is not set" denotes the default router that the 
 
 https://github.com/QueenieCplusplus/Subnet_mask
 
+------------------------------------------------------------------------
+# Default GW
+
+https://github.com/QueenieCplusplus/GW
+
 (to be continued)
