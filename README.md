@@ -65,6 +65,22 @@ And the "Gateway at last resort is not set" denotes the default router that the 
                      V       | V
                      Mask    V metrics
                              Distance of Route
-                         
+                             
+------------------------------------------------------------------------
+# Routing Table Entries
+
+- [x] it specifies the source of routing information that create the routing table entry. Both the indicators and its options are explained in the legend line.
+
+- [x] the subnet mask (a.k.a network prefix) for which the routing table is created.
+
+- [x] the asministrative distance.
+
+- [x] the routing information source metric, said static, then value is 0.
+
+- [x] the ip addr of next hop router en route.
+
+- [x] the output interface to be used to send datagrams destined for IP addr matched by the mask (prefix).
+
+
 
 (to be continued)
