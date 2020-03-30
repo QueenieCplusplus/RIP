@@ -35,6 +35,12 @@ Routing Information Protocol
 
 the cmd is used to display the routing table of cisco router. And this routing table only contains static and connected routes, so the output of show ip route cmd is simple.
 
+There are 3 sources of routing information:
+
+* Static
+* Dynamic
+* Connected
+
     R0$ show ip route
     
     Codes: R - RIP
