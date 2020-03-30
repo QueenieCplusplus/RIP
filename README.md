@@ -41,25 +41,30 @@ There are 3 sources of routing information:
 * Dynamic
 * Connected
 
+And the "Gateway at last resort is not set" denotes the default router that the router shall use if it receive a datagram destined for an IP addr for which it does not have any route.
+
     R0$ show ip route
     
-    Codes: R - RIP
-           O - OSPF
-           S - Stactic
-           U - Per User Static Route
-           B - BGP
-           i - IS-IS
-           * - Candidate Default
-           D - EIGRP
+    
+        Codes: R - RIP
+               O - OSPF
+               S - Stactic
+               U - Per User Static Route
+               B - BGP
+               i - IS-IS
+               * - Candidate Default
+               D - EIGRP
            
-      R 192.168.2.0/24 [120/2] via 192.168.3.1 00:00:00. Serial0
-      |          |       | |           |                      |
-      V          |       | |           V                      |
-      source of routing info           Next Hop Router        V
-                 |       | |                                  Output of interface
-                 V       | V
-                 Mask    V metrics
-                         Distance of Route
+        Gateway at last resort is not set
+           
+          R 192.168.2.0/24 [120/2] via 192.168.3.1 00:00:00. Serial0
+          |          |       | |           |                      |
+          V          |       | |           V                      |
+          source of routing info           Next Hop Router        V
+                     |       | |                                  Output of interface
+                     V       | V
+                     Mask    V metrics
+                             Distance of Route
                          
 
 (to be continued)
