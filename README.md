@@ -81,6 +81,7 @@ And the "Gateway at last resort is not set" denotes the default router that the 
 
 - [x] the output interface to be used to send datagrams destined for IP addr matched by the mask (prefix).
 
-
+------------------------------------------------------------------------
+# Network Prefix
 
 (to be continued)
